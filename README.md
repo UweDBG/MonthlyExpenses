@@ -1,19 +1,19 @@
 # MonthlyExpenses
 A calculator to track your monthly expenses
 
-Choose a category of your expens
-Type the name of the expens
-Type the amount it cost
+Choose a category of your expense
+Type the name of the expense
+Type the amount it costs
 Click "Hinzufügen" = Add
 
 It will be listed below
-You can delete entitys
+You can delete entities ("löschen" button)
 
-All costs are added up 
+All cost is added up 
 
-A siagram displaying the cost of a category in relation to each other
+A bar chart displaying the cost of a category in relation to each other ( X = Category, Y = Money )
 
-You can export it as a CSV file (located in the sam location as the src folder)
+You can export your profile as a CSV file (located in the same folder as the src folder)
 
 Next tab
 
