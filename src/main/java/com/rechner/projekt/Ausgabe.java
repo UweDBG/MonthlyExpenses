@@ -1,17 +1,15 @@
 package com.rechner.projekt;
 
-import java.time.LocalDate;
-
 public class Ausgabe {
 	private String kategorie;
+	private String name;
 	private float betrag;
-	private LocalDate datum;
 	
 	//Erzeuger des Objekts 
-	public Ausgabe(String kategorie, float betrag, String datumStr) {
+	public Ausgabe(String kategorie, String name, float betrag) {
 		this.kategorie = kategorie;
+		this.name = name;
 		this.betrag = betrag;
-		this.datum = LocalDate.parse(datumStr);
 	}
 	
 	//Getter
@@ -19,16 +17,16 @@ public class Ausgabe {
 		return kategorie;
 	}
 	
+	public String getName() {
+		return name;
+	}
+	
 	public Float getBetrag() {
 		return betrag;
 	}
 	
-	public LocalDate getDatum() {
-		return datum;
-	}
-	
 	@Override
 	public String toString() {
-		return datum + " - " + kategorie + ": " + betrag +  " €";
+		return String.format("%s: %s, %s €", kategorie, name, String.format("%.2f", betrag));
 	}
 }
